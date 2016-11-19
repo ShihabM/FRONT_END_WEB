@@ -93,12 +93,59 @@ a:hover {
 /*    margin: 50px 0px 0px 0px;*/
 }
 
+
+
+
+.milk, .accomplished, .scavenger {
+    clear: both;
+    background-color: #1F2C34;
+    color: #B0B5B3;
+    font-size: 15px;
+    padding: 50px 0px 50px 0px;
+    border-left: 10px solid #B0C4DE;
+}
+.milk>h1, .accomplished>h1, .scavenger>h1 {
+	padding: 0px 0px 0px 50px;
+}
+.milk>h4, .accomplished>h4, .scavenger>h4 {
+	font-family: 'Lato', sans-serif;
+    text-align: left;
+    font-size: 1.1em;
+	color: #8F9FAF;
+	padding: 0px 50px 0px 50px;
+}
+
+.accomplished {
+    border-left: 10px solid #3F3E9F;
+}
+.scavenger {
+    border-left: 10px solid #9378BA;
+}
+
+.aboutarea {
+    clear: both;
+    background-color: #25353F;
+    color: #B0B5B3;
+    font-size: 15px;
+    padding: 50px 0px 50px 0px;
+}
+.aboutarea>h1 {
+	padding: 0px 0px 0px 50px;
+}
+.aboutarea>h4 {
+	font-family: 'Lato', sans-serif;
+    text-align: left;
+    font-size: 1.1em;
+	color: #8F9FAF;
+	padding: 0px 50px 0px 50px;
+}
+
 .footer {
     clear: both;
     background-color: #1F2C34;
     color: #B0B5B3;
     font-size: 15px;
-    padding: 50px 200px 50px 200px;
+    padding: 50px 50px 50px 50px;
 }
 
 
@@ -337,7 +384,36 @@ fieldset {
     main>h2{
     font-size: 2.5em;
 }
+    
+    .footer {
+    clear: both;
+    background-color: #1F2C34;
+    color: #B0B5B3;
+    font-size: 15px;
+    padding: 50px 50px 50px 50px;
 }
+    
+    
+    
+    
+    .milk>h1, .accomplished>h1, .scavenger>h1  {
+	padding: 0px 50px 0px 50px;
+}
+.milk>h4, .accomplished>h4, .scavenger>h4  {
+	padding: 0px 50px 0px 50px;
+}
+
+    
+    .aboutarea>h1 {
+	padding: 0px 50px 0px 50px;
+}
+.aboutarea>h4 {
+	padding: 0px 50px 0px 50px;
+}
+}
+
+
+
 
 @media screen and (min-width: 900px) {
     
@@ -361,7 +437,35 @@ fieldset {
     .contentone {
     padding: 50px 50px 50px 50px;
 }
+    
+    .footer {
+    clear: both;
+    background-color: #1F2C34;
+    color: #B0B5B3;
+    font-size: 15px;
+    padding: 50px 100px 50px 100px;
 }
+    
+    
+    
+    .milk>h1, .accomplished>h1, .scavenger>h1  {
+	padding: 0px 100px 0px 100px;
+}
+.milk>h4, .accomplished>h4, .scavenger>h4  {
+	padding: 10px 100px 0px 100px;
+}
+    
+    .aboutarea>h1 {
+	padding: 0px 100px 0px 100px;
+}
+.aboutarea>h4 {
+	padding: 10px 100px 0px 100px;
+}
+
+}
+
+
+
 
 @media screen and (min-width: 1250px) {
     .sectionscontent {
@@ -372,6 +476,31 @@ fieldset {
     .contentone {
     padding: 50px 100px 50px 100px;
 }
+    
+    .footer {
+    clear: both;
+    background-color: #1F2C34;
+    color: #B0B5B3;
+    font-size: 15px;
+    padding: 50px 200px 50px 200px;
+}
+    
+    
+    .milk>h1, .accomplished>h1, .scavenger>h1  {
+	padding: 0px 200px 0px 200px;
+}
+.milk>h4, .accomplished>h4, .scavenger>h4  {
+	padding: 10px 200px 0px 200px;
+}
+    
+
+    .aboutarea>h1 {
+	padding: 0px 200px 0px 200px;
+}
+.aboutarea>h4 {
+	padding: 10px 200px 0px 200px;
+}
+    
 }
 
 @media screen and (min-width: 1600px) {
