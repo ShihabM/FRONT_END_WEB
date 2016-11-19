@@ -1,7 +1,11 @@
-/*some basic styles*/
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Lato|Rochester');
+
+
+/*basic styles*/
 body {
+    background-color: #9F3E71;
 	margin: 0;
-	color: #555;
+	color: #fff;
 	font-family: verdana, sans-serif;
 }
 header {
@@ -11,14 +15,60 @@ header {
 i {
     color: #708090;
 }
+p {
+    color: #fff;
+}
+fa fa-tags {
+    color: #fff;
+}
 h1 {
-    text-align: center;
+    text-align: left;
 	margin: 0;
     color: #fff;
-	padding: 30px 40px 30px 40px;
+	padding: 0px 0px 0px 0px;
+}
+.sectionscontent {
+	padding: 0px 0px 20px 0px;
 }
 main {
-	padding: 10px 40px 10px 40px;
+	background: #25353F;
+	padding: 0px 0px 50px 0px;
+/*    height: 100vh;*/
+}
+main>h1{
+    text-align: center;
+    font-size: 9em;
+	color: #B0C4DE;
+	padding: 150px 0px 0px 0px;
+}
+main>h2{
+    font-family: 'Rochester', cursive;
+    text-align: center;
+    font-size: 3.6em;
+    color: #fff;
+/*	padding: 10px 0px 0px 0px;*/
+}
+main>h3{
+    text-align: center;
+    font-size: 1.2em;
+	color: #708090;
+/*	padding: 0px 0px 0px 0px;*/
+}
+main>h4{
+    margin: auto;
+    width: 75%;
+	font-family: 'Lato', sans-serif;
+    text-align: left;
+    font-size: 1.1em;
+	color: #8F9FAF;
+	padding: 50px 0px 0px 0px;
+}
+main>h5{
+	font-family: calibri, sans-serif;
+    text-align: center;
+    font-size: 1.1em;
+	color: #8F9FAF;
+	padding: 100px 0px 0px 0px;
 }
 code {
 	font-size: 1.25em;
@@ -33,87 +83,189 @@ a:hover {
     color: darkcyan;
 }
 
-/*show-hide mobile-size nav nicely*/
-#nav-mobile {
-	line-height: 1.75em;
-	text-align: center;
-	background: #eee;
-	font-weight: bold;
-}
-#nav-main a {
-	background: #fff;
-	display: block;
-	text-align: center;
-	line-height: 1.75em;
-	text-decoration: none;
-	font-weight: bold;
-	height: 0;
-	opacity: 0;
-	visibility: hidden;
-	transition: height 0.4s ease-out, opacity 0.3s ease-out, visibility 0.3s ease-out;
-}
-#nav-main:hover a {
-	/*transitions work on these three properties*/
-	height: 1.75em;
-	opacity: 1;
-	visibility: visible;
-    color: #708090;
+.contentone {
+    clear: both;
+    width: auto;
+    margin: 0;
+    background-color: #9F3E71;
+    padding: 50px 60px 50px 60px;
+/*    margin: 50px 0px 0px 0px;*/
 }
 
-/*just decoration*/
-/* nav a {*/
-nav a {
-	display: inline-block;
-	color: #555;
+.footer {
+    clear: both;
+    background-color: #1F2C34;
+    color: #B0B5B3;
+    font-size: 15px;
+    padding: 50px 200px 50px 200px;
 }
-#nav-main a:hover {
-		background: #eee;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    width:100%;
+    height:55px;
+    background:#1F2C34; 
+    opacity: 1.0; 
+    border-radius:0px; 
+    position:fixed;   
+    z-index: 100;
 }
+
+.container li a:hover{
+-webkit-transition:color 0.4s ease-in-out;
+	-moz-transition:color 0.4s ease-in-out;
+	transition:color 0.4s ease-in-out;
+}
+.container li a{
+-webkit-transition:color 0.4s ease-in-out;
+	-moz-transition:color 0.4s ease-in-out;
+	transition:color 0.4s ease-in-out;
+}
+
+#nav,#nav ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#nav {
+    clear: both;
+    font-size: 12px;
+    height: 60;
+    padding: 0 0 0 9px;
+    position: relative;
+    width: 957px;
+}
+#nav ul {
+    background-color: #1F2C34;
+    left: -9999px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+
+    -moz-transition: -moz-transform 0.2s linear;
+    -ms-transition: -ms-transform 0.2s linear;
+    -o-transition: -o-transform 0.2s linear;
+    -webkit-transition: -webkit-transform 0.2s linear;
+    transition: transform 0.2s linear;
+}
+#nav li {
+    float: left;
+    position: relative;
+}
+#nav li a {
+    color: #B0B5B3;
+    display: block;
+    float: left;
+    font-family:'raleway'
+    font-weight: normal;
+    height: 30px;
+    padding: 20px 20px 0px 20px;
+    position: relative;
+    text-decoration: none;
+    /*text-shadow: 1px 1px 1px #000000;*/
+}
+#nav li:hover > a {
+    color: #B0C4DE;
+}
+#nav li:hover, #nav a:focus, #nav a:hover, #nav a:active {
+    outline: 0 none;
+}
+#nav li:hover ul.subs {
+    left: 0;
+    top: 50px;
+    width: 120px;
+
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+#nav ul li {
+    background: none;
+    width: 100%;
+}
+#nav ul li a {
+    float: none;
+}
+#nav ul li:hover > a {
+    background-color: #1F282E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*BREAKPOINT: larger than mobile*/
-@media screen and (min-width: 580px) {
-    h1 {
-    text-align: left;
-    }
-	#nav-main {
-		text-align: right;
-	}
-	#nav-main #nav-mobile {
-		display: none;
-	}
-	#nav-main a {
-	background: #fff;
-		margin: 0;
-		height: 1.75em;
-		display: inline-block;
-		visibility: visible;
-		padding: 0 1em;
-		opacity: 1;
-		border-right: 3px solid #fff;
-	}
-	#nav-main a:hover {
-		background: #eee;
-	}
-	#nav-main a:last-child {
-		border-right: none;
-	}
-    section {
-    width: 45%;
-    margin: 0 2.5% 0 2.5%;
+@media screen and (min-width: 900px) {
+    
+    .sectionscontent {
+        width: 45%;
+        margin: 0 2.5% 0 2.5%;
         float: left;
   }
     
     p {
         padding: 0 0 0 10px;
-        border-left: 4px solid #B0C4DE;
+        border-left: 4px solid #fff;
     }
+    .contentone {
+    padding: 50px 50px 50px 50px;
+}
 }
 
-
-@media screen and (min-width: 700px) {
-    section {
-    width: 45%;
-    margin: 0 2.5% 0 2.5%;
+@media screen and (min-width: 1250px) {
+    .sectionscontent {
+        width: 45%;
+        margin: 0 2.5% 0 2.5%;
         float: left;
   }
+    .contentone {
+    padding: 50px 100px 50px 100px;
+}
+}
+
+@media screen and (min-width: 1600px) {
+    .sectionscontent {
+        width: 28%;
+        margin: 0 2.5% 0 2.5%;
+        float: left;
+  }
+    .contentone {
+    padding: 50px 200px 50px 200px;
+}
 }
