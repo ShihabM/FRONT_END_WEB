@@ -28,32 +28,46 @@ h1 {
 	padding: 0px 0px 0px 0px;
 }
 .sectionscontent {
+    z-index: 999;
 	padding: 0px 0px 20px 0px;
 }
 main {
 	background: #25353F;
 	padding: 0px 0px 50px 0px;
-/*    height: 100vh;*/
+    
+    background-image: url('images/pinkbear.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
+
+
+
+
 main>h1{
     text-align: center;
     font-family: 'Bangers', cursive;
     font-size: 5em;
-	color: #B0C4DE;
+	color: #fff;
 	padding: 150px 0px 0px 0px;
+    -webkit-text-stroke: 4px #25353F;
+    
+    /*-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;*/
 }
 main>h2{
+    font-family: 'Rochester', cursive;
     text-align: center;
     font-size: 2em;
-    color: #fff;
-/*	padding: 10px 0px 0px 0px;*/
+    color: #B0C4DE;
+/*    -webkit-text-stroke: 1px #25353F;*/
 }
 main>h3{
-    font-family: 'Rochester', cursive;
     text-align: center;
     font-size: 1.8em;
 	color: #fff;
-/*	padding: 0px 0px 0px 0px;*/
 }
 main>h4{
     margin: auto;
@@ -94,6 +108,13 @@ a:hover {
 }
 
 
+.milk>p, .milk>ul, .accomplished>p, .accomplished>ul, .scavenger>p, .scavenger>ul {
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    font-size: 1.1em;
+	color: #8F9FAF;
+	padding: 0px 50px 0px 50px;
+}
 
 
 .milk, .accomplished, .scavenger {
@@ -396,10 +417,7 @@ fieldset {
     
     
     
-    .milk>h1, .accomplished>h1, .scavenger>h1  {
-	padding: 0px 50px 0px 50px;
-}
-.milk>h4, .accomplished>h4, .scavenger>h4  {
+    .milk>h1, .accomplished>h1, .scavenger>h1, .milk>p, .milk>ul, .accomplished>p, .accomplished>ul, .scavenger>p, .scavenger>ul {
 	padding: 0px 50px 0px 50px;
 }
 
@@ -430,7 +448,7 @@ fieldset {
         float: left;
   }
     
-    p {
+    .sectionscontent>p {
         padding: 0 0 0 10px;
         border-left: 4px solid #fff;
     }
@@ -448,11 +466,8 @@ fieldset {
     
     
     
-    .milk>h1, .accomplished>h1, .scavenger>h1  {
+    .milk>h1, .accomplished>h1, .scavenger>h1, .milk>p, .milk>ul, .accomplished>p, .accomplished>ul, .scavenger>p, .scavenger>ul   {
 	padding: 0px 100px 0px 100px;
-}
-.milk>h4, .accomplished>h4, .scavenger>h4  {
-	padding: 10px 100px 0px 100px;
 }
     
     .aboutarea>h1 {
@@ -486,11 +501,8 @@ fieldset {
 }
     
     
-    .milk>h1, .accomplished>h1, .scavenger>h1  {
+    .milk>h1, .accomplished>h1, .scavenger>h1, .milk>p, .milk>ul, .accomplished>p, .accomplished>ul, .scavenger>p, .scavenger>ul  {
 	padding: 0px 200px 0px 200px;
-}
-.milk>h4, .accomplished>h4, .scavenger>h4  {
-	padding: 10px 200px 0px 200px;
 }
     
 
