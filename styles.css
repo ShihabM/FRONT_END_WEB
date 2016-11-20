@@ -104,6 +104,19 @@ a:hover {
     padding: 50px 60px 50px 60px;
 }
 
+.contenttwo {
+    text-align: center;
+    clear: both;
+    width: auto;
+    margin: 0;
+    background-color: #25353F;
+    padding: 20px 60px 20px 60px;
+}
+.contenttwo>p {
+    font-family: 'Trirong', serif;
+    font-size: 1.2em;
+}
+
 
 .milk>p, .milk>ul, .accomplished>p, .accomplished>ul, .scavenger>p, .scavenger>ul {
     font-family: 'Lato', sans-serif;
