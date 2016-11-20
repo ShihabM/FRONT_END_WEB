@@ -49,7 +49,6 @@ main>h1{
     font-size: 5em;
 	color: #fff;
 	padding: 150px 0px 0px 0px;
-    -webkit-text-stroke: 4px #25353F;
 }
 .home>p{
     font-family: 'Alfa Slab One', cursive;
@@ -212,7 +211,6 @@ a:hover {
 
 .pin {
   background-color: #9F3E71;
-  border-radius: 50%;
   height: 90px;
   width: 90px;
     margin: auto;
@@ -237,8 +235,18 @@ a:hover {
 
 
 
-
-
+.mountain1 {
+    margin: auto;
+  width: 0; 
+  height: 0; 
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  
+  border-top: 100px solid #1F2C34;
+    margin-bottom: -150px;
+}
+.mountain2 {
+}
 
 
 
@@ -626,34 +634,29 @@ fieldset {
 /*BREAKPOINT: larger than mobile*/
 @media screen and (min-width: 580px) {
     main>h1{
-    font-size: 7em;
-}
+        font-size: 7em;
+    }
     .home>p{
-    font-size: 1.8em;
-}
-    
+        font-size: 1.8em;
+    }
     .footer {
-    clear: both;
-    background-color: #1F2C34;
-    color: #B0B5B3;
-    font-size: 15px;
-    padding: 50px 50px 50px 50px;
-}
-    
-    
-    
-    
-    .milk>h1, .accomplished>h1, .scavenger>h1, .milk>p, .milk>ul, .accomplished>p, .accomplished>ul, .scavenger>p, .scavenger>ul {
-	padding: 0px 50px 0px 50px;
-}
-
-    
+        clear: both;
+        background-color: #1F2C34;
+        color: #B0B5B3;
+        font-size: 15px;
+        padding: 50px 50px 50px 50px;
+    }
+    .milk>h1, .accomplished>h1, .scavenger>h1, .milk>p, .milk>ul, .accomplished>p,  .accomplished>ul, .scavenger>p, .scavenger>ul {
+	   padding: 0px 50px 0px 50px;
+    }
     .aboutarea>h1 {
-	padding: 0px 50px 0px 50px;
-}
-.aboutarea>h4 {
-	padding: 0px 50px 0px 50px;
-}
+	   padding: 0px 50px 0px 50px;
+    }
+    .aboutarea>h4 {
+	   padding: 0px 50px 0px 50px;
+    }
+    
+    
 }
 
 
@@ -662,50 +665,47 @@ fieldset {
 @media screen and (min-width: 900px) {
     
     main>h1{
-    font-size: 9em;
-}
+        font-size: 9em;
+    }
     .home>p{
-    font-size: 1.8em;
-}
-    
+        font-size: 1.8em;
+    }
     .sectionscontent {
         width: 45%;
         margin: 0 2.5% 0 2.5%;
         float: left;
-  }
-    
+    }
     .sectionscontent>p {
         padding: 0 0 0 10px;
         border-left: 4px solid #fff;
     }
     .contentone {
-    padding: 50px 50px 50px 50px;
-}
-    
+        padding: 50px 50px 50px 50px;
+    }
     .footer {
-    clear: both;
-    background-color: #1F2C34;
-    color: #B0B5B3;
-    font-size: 15px;
-    padding: 50px 100px 50px 100px;
-}
-    
-    
-    
+        clear: both;
+        background-color: #1F2C34;
+        color: #B0B5B3;
+        font-size: 15px;
+        padding: 50px 100px 50px 100px;
+    }
     .milk>h1, .accomplished>h1, .scavenger>h1, .milk>p, .milk>ul, .accomplished>p, .accomplished>ul, .scavenger>p, .scavenger>ul   {
-	padding: 0px 100px 0px 100px;
-}
-    
+	   padding: 0px 100px 0px 100px;
+    }
     .aboutarea>h1 {
-	padding: 0px 100px 0px 100px;
-}
-.aboutarea>h4 {
-	padding: 10px 100px 0px 100px;
-}
-    
-    
-    
-    
+	   padding: 0px 100px 0px 100px;
+    }
+    .aboutarea>h4 {
+	   padding: 10px 100px 0px 100px;
+    }
+    .mountain2 {
+        background-color: #9F3E71;
+        height: 90px;
+        width: 90px;
+        margin: auto;
+        transform: rotate(-45deg);
+        margin-bottom: -120px;
+    }
     
     
 }
@@ -718,34 +718,26 @@ fieldset {
         width: 28%;
         margin: 0 2.5% 0 2.5%;
         float: left;
-  }
+    }
     .contentone {
-    padding: 50px 100px 50px 100px;
-}
-    
+        padding: 50px 100px 50px 100px;
+    }
     .footer {
-    clear: both;
-    background-color: #1F2C34;
-    color: #B0B5B3;
-    font-size: 15px;
-    padding: 50px 200px 50px 200px;
-}
-    
-    
+        clear: both;
+        background-color: #1F2C34;
+        color: #B0B5B3;
+        font-size: 15px;
+        padding: 50px 200px 50px 200px;
+    }
     .milk>h1, .accomplished>h1, .scavenger>h1, .milk>p, .milk>ul, .accomplished>p, .accomplished>ul, .scavenger>p, .scavenger>ul  {
-	padding: 0px 200px 0px 200px;
-}
-    
-
+	   padding: 0px 200px 0px 200px;
+    }
     .aboutarea>h1 {
-	padding: 0px 200px 0px 200px;
-}
-.aboutarea>h4 {
-	padding: 10px 200px 0px 200px;
-}
-    
-    
-    
+	   padding: 0px 200px 0px 200px;
+    }
+    .aboutarea>h4 {
+	   padding: 10px 200px 0px 200px;
+    }
     
     
 }
@@ -755,8 +747,8 @@ fieldset {
         width: 20%;
         margin: 0 2.5% 0 2.5%;
         float: left;
-  }
+    }
     .contentone {
-    padding: 50px 200px 50px 200px;
-}
+        padding: 50px 200px 50px 200px;
+    }
 }
