@@ -2,6 +2,10 @@
 
 
 /*basic styles*/
+html {
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+}
 body {
     background-color: #9F3E71;
 	margin: 0;
@@ -192,7 +196,7 @@ a:hover {
     float: left;
 	max-width:500px;
 	width:30%;
-    padding: 0px 50px 0px 200px;
+    padding: 0px 50px 0px 100px;
 	position:relative;
 }
 
@@ -220,7 +224,7 @@ a:hover {
 
 
 
-
+/*map pin*/
 
 .pin {
   background-color: #9F3E71;
@@ -230,7 +234,13 @@ a:hover {
     border-radius: 50% 50% 50% 0;
   transform: rotate(-45deg);
     box-shadow: 0px 0px 15px #25353F;
+    animation: blinking 3s linear infinite;
 }
+
+@keyframes blinking {  
+  50% { opacity: 0.5; }
+}
+
 
 .pin::before {
   border: 0 solid transparent;
@@ -247,6 +257,7 @@ a:hover {
 }
 
 
+/*homepage arrows*/
 
 .mountain1 {
     margin: auto;
@@ -265,11 +276,113 @@ a:hover {
 
 
 
+/*flashing text*/
+
+.home>p {
+    margin-top: -20px;
+}
+
+
+.visiblebracket {
+    font-size: 1.4em;
+    margin-bottom: -77px;
+    animation: blinker 1.3s linear infinite;
+}
+
+.visiblebracket>p {
+    color: #9378BA;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+.contentcode {    
+    margin: auto;
+    width: 200px;
+    line-height: 40px;
+    font-family: 'Lato', sans-serif;
+    height: 160px;
+    overflow:hidden;
+    font-family: 'Trirong', serif;
+    text-align: center;
+    font-size: 1.8em;
+	color: #fff;
+}
+
+.visible {
+  font-weight:600;
+  overflow:hidden;
+  height:40px;
+  padding:0 10px;
+}
+
+.visible>p {
+  display:inline;
+  float:left;
+  margin:0;
+}
+
+.visible>ul {
+  margin-top:0;
+  padding-left:60px;
+  text-align:left;
+  list-style:none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.visible>ul li {
+  line-height:40px;
+  margin:0;
+}
+
+@-webkit-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-webkit-keyframes change {
+  0%, 12%, 100% {transform:translateY(0);}
+  17%,29% {transform:translateY(-25%);}
+  34%,46% {transform:translateY(-50%);}
+  51%,63% {transform:translateY(-75%);}
+  68%,80% {transform:translateY(-50%);}
+  85%,97% {transform:translateY(-25%);}
+}
+
+@keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@keyframes change {
+  0%, 12%, 100% {transform:translateY(0);}
+  17%,29% {transform:translateY(-25%);}
+  34%,46% {transform:translateY(-50%);}
+  51%,63% {transform:translateY(-75%);}
+  68%,80% {transform:translateY(-50%);}
+  85%,97% {transform:translateY(-25%);}
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+/*social icons*/
 
 @font-face {
     font-family: 'si';
@@ -300,6 +413,7 @@ a:hover {
     display:inline-block;
     *display:inline;
     zoom:1;
+    padding: 5px 0 5px 0;
 }
 
 .soc li a {
@@ -380,21 +494,6 @@ a:hover {
 .soc-googleplus:before {
     content:'\e042';
 }
-.soc-pinterest {
-	-webkit-transition:background-color 0.3s ease-in-out;
-	-moz-transition:background-color 0.3s ease-in-out;
-	transition:background-color 0.3s ease-in-out;
-    background-color: #25353F;
-}
-.soc-pinterest:hover {
-	-webkit-transition:background-color 0.3s ease-in-out;
-	-moz-transition:background-color 0.3s ease-in-out;
-	transition:background-color 0.3s ease-in-out;
-    background-color: #c92619;
-}
-.soc-pinterest:before {
-    content:'\e043';
-}
 .soc-linkedin {
 	-webkit-transition:background-color 0.3s ease-in-out;
 	-moz-transition:background-color 0.3s ease-in-out;
@@ -418,7 +517,7 @@ a:hover {
 
 
 
-
+/*navigation bar*/
 
 .container{
     width:100%;
@@ -541,11 +640,11 @@ a:hover {
 
 
 
-
+/*contact form*/
 
 .cont {
 	max-width:500px;
-	width:50%;
+	width:40%;
     padding: 20px 0px 0px 0px;
 /*	margin:0 auto;*/
 	position:relative;
@@ -720,7 +819,6 @@ fieldset {
         margin-bottom: -120px;
     }
     
-    
 }
 
 
@@ -753,6 +851,11 @@ fieldset {
     }
     
     
+    
+    .milk>h1, .milk>p, .accomplished>h1, .accomplished>p, .scavenger>h1, .scavenger>p {
+        width: 35%;
+    }
+    
 }
 
 @media screen and (min-width: 1600px) {
@@ -763,5 +866,10 @@ fieldset {
     }
     .contentone {
         padding: 50px 200px 50px 200px;
+    }
+    
+    
+    .othercont {
+        padding: 0px 50px 0px 200px;
     }
 }
