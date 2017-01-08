@@ -7,7 +7,7 @@ html {
     overflow-x: scroll;
 }
 body {
-    background-color: #415E7F;
+    background-color: #1D1F20;
 	margin: 0;
 	color: #fff;
 	font-family: verdana, sans-serif;
@@ -32,6 +32,7 @@ h1 {
 	padding: 0px 0px 0px 0px;
 }
 .sectionscontent {
+    width: 100%;
     z-index: 999;
 	padding: 0px 0px 20px 0px;
 }
@@ -39,9 +40,8 @@ h1 {
     color: #fff;
 }
 main {
-	background: #1D1F20;
+/*	background: #1D1F20;*/
 	padding: 0px 0px 50px 0px;
-    
     background-image: url('images/bluebear.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -106,12 +106,20 @@ a:hover {
     color: #fff;
 }
 
+.bgmain {
+    position: absolute;
+    z-index: 10;
+    height: 2000px;
+    background-color: #415E7F;
+}
 .contentone {
     clear: both;
     width: auto;
     margin: 0;
     background-color: #415E7F;
     padding: 50px 60px 50px 60px;
+    
+    
 }
 
 .contenttwo {
@@ -236,12 +244,13 @@ a:hover {
 
 
 /*Waves*/
+/*https://codepen.io/rstacruz/pen/oxJqNv*/
 .wave {
   opacity: .4;
   position: absolute;
   top: 3%;
   left: 50%;
-  background: #0af;
+  background: #fff;
   width: 500px;
   height: 500px;
   margin-left: -250px;
@@ -258,7 +267,7 @@ a:hover {
 .wave.-two {
   animation: drift 5000ms infinite linear;
   opacity: .1;
-  background: #E89DD5;
+  background: #EFC6E8;
 }
 @keyframes drift {
   from { transform: rotate(0deg); }
@@ -280,7 +289,7 @@ a:hover {
     border-radius: 50% 50% 50% 0;
   transform: rotate(-45deg);
     box-shadow: 0px 0px 15px #25353F;
-    animation: blinking 3s linear infinite;
+/*    animation: blinking 3s linear infinite;*/
 }
 
 @keyframes blinking {  
@@ -303,23 +312,18 @@ a:hover {
 }
 
 
-/*homepage arrows*/
 
-.mountain1 {
-    margin: auto;
-  width: 0; 
-  height: 0; 
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
-  
-  border-top: 100px solid #1F2C34;
-    margin-bottom: -150px;
+
+
+svg {
+  display: inline-block;
+/*  position: absolute;*/
+  top: 0;
+  left: 0;
+    margin-bottom: -120px;
+    
+    z-index: 10;
 }
-.mountain2 {
-}
-
-
-
 
 
 /*flashing text*/
@@ -357,7 +361,7 @@ a:hover {
     text-align: center;
     font-size: 1.8em;
 	color: #fff;
-    margin-top: 50px;
+    margin-top: 90px;
 }
 
 .visible {
@@ -427,76 +431,48 @@ a:hover {
 
 
 
-.orbit {
-    position: absolute;
-    transform: translate(200px, -450px);
-    margin-left: 800px;
+
+
+
+
+
+
+/*Parallax*/
+/*https://medium.com/@hamstu/recreating-the-firewatch-parallax-effect-213694d42f4e#.979zrblwv*/
+.parallax-container {
+  position: fixed;
+  overflow: visible;
+  width: 100%;
+  height: 1050px;
+    z-index: -10;
+}
+.parallax-layer {
+  width: 100%;
+  height: 600px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-position: bottom center;
+  background-repeat: repeat-x;
+  background-size: 960px 253px;
 }
 
-.planets div {
-  display: inline-block;
-  position: absolute;
+.layer-1 {
+    top: 40px;
+    z-index: -5;
+    background-image: url('images/mountain1.png');
 }
-
-.ring {
-  border: 1.5px dashed rgba(255, 255, 255, 0.5);   
-  transform: rotate(0);    
-  box-shadow: none;
+.layer-2 {
+    top: 50px;
+    z-index: -7;
+    background-image: url('images/mountain2.png');
 }
-
-.three {
-  width: 20px;
-  height: 20px;
-  border-radius: 25px;
-  background: #9378BA;
-  top: 25px;
-  right: -122px;
-  transform-origin: 15px 15px;  
+.layer-3 {
+    height: 800px;
+    top: -250px;
+    z-index: -9;
+    background-image: url('images/mountain3.png');
 }
- 
-.one {
-  width: 300px;
-  height: 300px;
-  border-radius: 200px;
-  left: -110px;
-  top: -110px;
-}
-.sun {
-  background: #9378BA;
-  width: 80px;
-  height: 80px;
-  border-radius: 80px;
-  top: 170px;
-  left: 240px;
-  display: inline-block;
-  position: absolute;
-    
-    
-    /*
-  background-color: #9F3E71;
-  height: 80px;
-  width: 80px;
-    margin: auto;
-    border-radius: 50% 50% 50% 0;*/
-}
-
-.sun {
-  animation: spin 20s infinite linear; 
-}  
-
-
-@keyframes spin {  
-from {  
-  transform: rotate(0deg);  
-}  
-to {  
-  transform: rotate(360deg);  
-   }  
-}
-
-
-
-
 
 
 
@@ -908,11 +884,11 @@ fieldset {
     .sectionscontent {
         width: 45%;
         margin: 0 2.5% 0 2.5%;
-        float: left;
+/*        float: left;*/
     }
     .sectionscontent>p {
         padding: 0 0 0 10px;
-        border-left: 4px solid #fff;
+        border-left: 2px solid #fff;
     }
     .contentone {
         padding: 50px 50px 50px 50px;
@@ -933,14 +909,6 @@ fieldset {
     .aboutarea>h4 {
 	   padding: 10px 100px 0px 100px;
     }
-    .mountain2 {
-        background-color: #9F3E71;
-        height: 90px;
-        width: 90px;
-        margin: auto;
-        transform: rotate(-45deg);
-        margin-bottom: -120px;
-    }
     
 }
 
@@ -951,7 +919,7 @@ fieldset {
     .sectionscontent {
         width: 28%;
         margin: 0 2.5% 0 2.5%;
-        float: left;
+/*        float: left;*/
     }
     .contentone {
         padding: 50px 100px 50px 100px;
@@ -985,7 +953,7 @@ fieldset {
     .sectionscontent {
         width: 20%;
         margin: 0 2.5% 0 2.5%;
-        float: left;
+/*        float: left;*/
     }
     .contentone {
         padding: 50px 200px 50px 200px;
