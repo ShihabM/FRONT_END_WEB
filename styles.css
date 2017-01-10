@@ -33,8 +33,8 @@ h1 {
 }
 .sectionscontent {
     width: 100%;
-    z-index: 999;
 	padding: 0px 0px 20px 0px;
+    background-color: #415E7F;
 }
 .sectionscontent>h1 {
     color: #fff;
@@ -118,11 +118,11 @@ a:hover {
     margin: 0;
     background-color: #415E7F;
     padding: 50px 60px 50px 60px;
-    
-    
+    min-height: 470px;
 }
 
 .contenttwo {
+    z-index: 200;
     text-align: center;
     clear: both;
     width: auto;
@@ -428,15 +428,6 @@ svg {
 
 
 
-
-
-
-
-
-
-
-
-
 /*Parallax*/
 /*https://medium.com/@hamstu/recreating-the-firewatch-parallax-effect-213694d42f4e#.979zrblwv*/
 .parallax-container {
@@ -458,7 +449,7 @@ svg {
 }
 
 .layer-1 {
-    top: 40px;
+    top: 60px;
     z-index: -5;
     background-image: url('images/mountain1.png');
 }
@@ -884,7 +875,7 @@ fieldset {
     .sectionscontent {
         width: 45%;
         margin: 0 2.5% 0 2.5%;
-/*        float: left;*/
+        float: left;
     }
     .sectionscontent>p {
         padding: 0 0 0 10px;
@@ -910,6 +901,11 @@ fieldset {
 	   padding: 10px 100px 0px 100px;
     }
     
+    
+    
+    .contentone {
+        min-height: 400px;
+    }
 }
 
 
@@ -919,7 +915,7 @@ fieldset {
     .sectionscontent {
         width: 28%;
         margin: 0 2.5% 0 2.5%;
-/*        float: left;*/
+        float: left;
     }
     .contentone {
         padding: 50px 100px 50px 100px;
@@ -947,13 +943,17 @@ fieldset {
         width: 35%;
     }
     
+    
+    .contentone {
+        min-height: 250px;
+    }
 }
 
 @media screen and (min-width: 1600px) {
     .sectionscontent {
-        width: 20%;
+        width: 28%;
         margin: 0 2.5% 0 2.5%;
-/*        float: left;*/
+        float: left;
     }
     .contentone {
         padding: 50px 200px 50px 200px;
