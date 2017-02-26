@@ -438,28 +438,28 @@ svg {
 .layer-1 {
     top: 60px;
     z-index: -5;
-    background-image: url("https://github.com/ShihabM/FRONT_END_WEB/tree/master/images/mountain1.png");
+    background-image: url("../images/mountain1.png");
 }
 .layer-2 {
     top: 50px;
     z-index: -7;
-    background-image: url("https://github.com/ShihabM/FRONT_END_WEB/tree/master/images/mountain2.png");
+    background-image: url("../images/mountain2.png");
 }
 .layer-3 {
     height: 800px;
     top: -250px;
     z-index: -9;
-    background-image: url("https://github.com/ShihabM/FRONT_END_WEB/tree/master/images/mountain3.png");
+    background-image: url("../images/mountain3.png");
 }
 
 /*social icons, using socicon font*/
 @font-face {
     font-family: 'si';
-    src: url("https://github.com/ShihabM/FRONT_END_WEB/tree/master/fonts/socicon.eot");
-    src: url("https://github.com/ShihabM/FRONT_END_WEB/tree/master/fonts/socicon.eot?#iefix") format('embedded-opentype'),
-         url("https://github.com/ShihabM/FRONT_END_WEB/tree/master/fonts/socicon.woff") format('woff'),
-         url("https://github.com/ShihabM/FRONT_END_WEB/tree/master/fonts/socicon.ttf") format('truetype'),
-         url("https://github.com/ShihabM/FRONT_END_WEB/tree/master/fonts/socicon.svg#icomoonregular") format('svg');
+    src: url("../fonts/socicon.eot");
+    src: url("../fonts/socicon.eot?#iefix") format('embedded-opentype'),
+         url("../fonts/socicon.woff") format('woff'),
+         url("../fonts/socicon.ttf") format('truetype'),
+         url("../fonts/socicon.svg#icomoonregular") format('svg');
     font-weight: normal;
     font-style: normal;
 }
