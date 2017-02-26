@@ -214,7 +214,7 @@ a:hover {
 .aboutarea>h1 {
 	padding: 0px 0px 0px 50px;
 }
-.aboutarea>h4 {
+.aboutarea>p {
 	font-family: 'Lato', sans-serif;
     text-align: left;
     font-size: 1.1em;
@@ -993,7 +993,7 @@ fieldset {
     .aboutarea>h1 {
 	   padding: 0px 50px 0px 50px;
     }
-    .aboutarea>h4 {
+    .aboutarea>p {
 	   padding: 0px 50px 0px 50px;
     }
     
@@ -1035,7 +1035,7 @@ fieldset {
     .aboutarea>h1 {
 	   padding: 0px 100px 0px 100px;
     }
-    .aboutarea>h4 {
+    .aboutarea>p {
 	   padding: 10px 100px 0px 100px;
     }
     
@@ -1087,7 +1087,7 @@ fieldset {
     .aboutarea>h1 {
 	   padding: 0px 200px 0px 200px;
     }
-    .aboutarea>h4 {
+    .aboutarea>p {
 	   padding: 10px 200px 0px 200px;
     }
     
