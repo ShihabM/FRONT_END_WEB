@@ -34,7 +34,7 @@ h1 {
 }
 main {
 	padding: 0px 0px 50px 0px;
-    background-image: url('../Images/bluebear.png');
+    background-image: url('Images/bluebear.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -438,18 +438,18 @@ svg {
 .layer-1 {
     top: 60px;
     z-index: -5;
-    background-image: url('../Images/mountain1.png');
+    background-image: url('Images/mountain1.png');
 }
 .layer-2 {
     top: 50px;
     z-index: -7;
-    background-image: url('../Images/mountain2.png');
+    background-image: url('Images/mountain2.png');
 }
 .layer-3 {
     height: 800px;
     top: -250px;
     z-index: -9;
-    background-image: url('../Images/mountain3.png');
+    background-image: url('Images/mountain3.png');
 }
 
 /*social icons, using socicon font*/
@@ -622,7 +622,8 @@ svg {
 }
 #nav li:hover ul.subs {
     list-style: none outside none;
-    padding: 10px;
+    margin-top: -5px;
+    padding: 0px 10px 0px 10px;
     left: 80px;
     top: 50px;
     width: 150px;
@@ -669,7 +670,7 @@ ul.topnav li a {
     padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 16px;
+    font-size: 17px;
 }
 ul.topnav li.icon {
     display: none;
