@@ -34,7 +34,7 @@ h1 {
 }
 main {
 	padding: 0px 0px 50px 0px;
-    background-image: url('../images/bluebear.png');
+    background-image: url('FRONT_END_WEB/images/bluebear.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
