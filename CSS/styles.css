@@ -34,7 +34,7 @@ h1 {
 }
 main {
 	padding: 0px 0px 50px 0px;
-    background-image: url('../images/bluebear.png');
+    background-image: url('/images/bluebear.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -438,18 +438,18 @@ svg {
 .layer-1 {
     top: 60px;
     z-index: -5;
-    background-image: url('../images/mountain1.png');
+    background-image: url('/images/mountain1.png');
 }
 .layer-2 {
     top: 50px;
     z-index: -7;
-    background-image: url('../images/mountain2.png');
+    background-image: url('/images/mountain2.png');
 }
 .layer-3 {
     height: 800px;
     top: -250px;
     z-index: -9;
-    background-image: url('../images/mountain3.png');
+    background-image: url('/images/mountain3.png');
 }
 
 /*social icons, using socicon font*/
