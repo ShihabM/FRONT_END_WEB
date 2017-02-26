@@ -5,12 +5,14 @@
 html {
     scroll-behavior: smooth;
     overflow-x: scroll;
+/*    overflow: hidden;*/
 }
 body {
     background-color: #1D1F20;
 	margin: 0;
 	color: #fff;
 	font-family: verdana, sans-serif;
+    overflow: hidden;
 }
 header {
 	background: #708090;
@@ -144,6 +146,25 @@ a:hover {
 	padding: 0px 50px 0px 50px;
 }
 
+.milk>a {
+    color: hotpink;
+}
+.milk>a:hover {
+    color: #fff;
+}
+.accomplished>a {
+    color: hotpink;
+}
+.accomplished>a:hover {
+    color: #fff;
+}
+.scavenger>a {
+    color: hotpink;
+}
+.scavenger>a:hover {
+    color: #fff;
+}
+
 
 .milk, .accomplished, .scavenger {
     clear: both;
@@ -163,6 +184,18 @@ a:hover {
 	color: #8F9FAF;
 	padding: 0px 50px 0px 50px;
 }
+
+
+    .milk2 {
+        width: 100%;
+        margin: 0 0 0 0;
+/*        transform:translateX(0%);*/
+        overflow: hidden;
+    }
+    
+    .milk2 img {
+        width: 80%;
+    }
 
 .accomplished {
     border-left: 10px solid #3F3E9F;
@@ -634,9 +667,16 @@ svg {
 
 
 .socialbg {
+/*    border-top: #fff solid 40px;*/
     background-color: #282F33;
 }
 
+.twitter-grid {
+  background: #fff;
+}
+.twitter-grid:hover, .twitter-grid:focus {
+  background-color: #fff;
+}
 
 /*
 
@@ -664,9 +704,13 @@ svg {
 
 
 
-/*navigation bar*/
 
-.container{
+
+
+
+
+.container {
+    
     width:100%;
     height:55px;
     background:#222831; 
@@ -676,37 +720,6 @@ svg {
     z-index: 100;
 }
 
-.container>p {
-    float: right;
-    padding: 0 40px 0 0;
-    font-family: 'Bangers', cursive;
-    font-size: 1.2em;
-}
-
-.container li a:hover{
--webkit-transition:color 0.4s ease-in-out;
-	-moz-transition:color 0.4s ease-in-out;
-	transition:color 0.4s ease-in-out;
-}
-.container li a{
--webkit-transition:color 0.4s ease-in-out;
-	-moz-transition:color 0.4s ease-in-out;
-	transition:color 0.4s ease-in-out;
-}
-
-#nav,#nav ul {
-    list-style: none outside none;
-    margin: 0;
-    padding: 0;
-}
-#nav {
-    clear: both;
-    font-size: 12px;
-    height: 60;
-    padding: 0 0 0 9px;
-    position: relative;
-    width: 957px;
-}
 #nav ul {
     background-color: #222831;
     left: -9999px;
@@ -732,22 +745,17 @@ svg {
     -webkit-transition: -webkit-transform 0.2s linear;
     transition: transform 0.2s linear;
 }
-#nav li {
-    float: left;
-    position: relative;
-}
-#nav li a {
-    color: #B0B5B3;
-    display: block;
-    float: left;
-    font-family:'raleway'
-    font-weight: normal;
-    height: 30px;
-    padding: 20px 20px 0px 20px;
-    position: relative;
-    text-decoration: none;
-    /*text-shadow: 1px 1px 1px #000000;*/
-}
+
+
+
+
+
+
+
+
+
+
+
 #nav li:hover > a {
     color: #B0C4DE;
 }
@@ -755,9 +763,11 @@ svg {
     outline: 0 none;
 }
 #nav li:hover ul.subs {
-    left: 0;
+    list-style: none outside none;
+    padding: 10px;
+    left: 80px;
     top: 50px;
-    width: 120px;
+    width: 150px;
 
     -moz-transform: scaleY(1);
     -ms-transform: scaleY(1);
@@ -776,10 +786,82 @@ svg {
     background-color: #1F282E;
 }
 
+.container li a:hover{
+-webkit-transition:color 0.4s ease-in-out;
+	-moz-transition:color 0.4s ease-in-out;
+	transition:color 0.4s ease-in-out;
+}
+.container li a{
+-webkit-transition:color 0.4s ease-in-out;
+	-moz-transition:color 0.4s ease-in-out;
+	transition:color 0.4s ease-in-out;
+}
 
 
 
 
+
+
+
+
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1F282E;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+ul.topnav li.icon {display: none;}
+
+ul.topnav li.icon2 {
+    float: right;
+    display: inline-block;
+    
+    padding: 5px 5px 0 0;
+    font-family: 'Bangers', cursive;
+    font-size: 1.2em;
+  }
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+    
+    ul.topnav li.icon2 {display: none;}
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
 
 
 
@@ -905,7 +987,7 @@ fieldset {
         font-size: 15px;
         padding: 50px 50px 50px 50px;
     }
-    .milk>h1, .accomplished>h1, .scavenger>h1, .milk>p, .milk>ul, .accomplished>p,  .accomplished>ul, .scavenger>p, .scavenger>ul {
+    .milk>h1, .accomplished>h1, .scavenger>h1, .milk>p, .milk>ul, .milk>a, .accomplished>p,  .accomplished>ul, .accomplished>a, .scavenger>p, .scavenger>ul, .scavenger>a {
 	   padding: 0px 50px 0px 50px;
     }
     .aboutarea>h1 {
@@ -947,7 +1029,7 @@ fieldset {
         font-size: 15px;
         padding: 50px 100px 50px 100px;
     }
-    .milk>h1, .accomplished>h1, .scavenger>h1, .milk>p, .milk>ul, .accomplished>p, .accomplished>ul, .scavenger>p, .scavenger>ul   {
+    .milk>h1, .accomplished>h1, .scavenger>h1, .milk>p, .milk>ul, .milk>a, .accomplished>p, .accomplished>ul, .accomplished>a, .scavenger>p, .scavenger>ul, .scaveger>a   {
 	   padding: 0px 100px 0px 100px;
     }
     .aboutarea>h1 {
@@ -955,6 +1037,20 @@ fieldset {
     }
     .aboutarea>h4 {
 	   padding: 10px 100px 0px 100px;
+    }
+    
+    
+    
+    
+    .milk2 {
+        width: 100%;
+        margin: -600px 0 0 0;
+        transform:translateX(42%);
+        overflow: hidden;
+    }
+    
+    .milk2 img {
+        width: 80%;
     }
     
     
@@ -983,9 +1079,11 @@ fieldset {
         font-size: 15px;
         padding: 50px 200px 50px 200px;
     }
-    .milk>h1, .accomplished>h1, .scavenger>h1, .milk>p, .milk>ul, .accomplished>p, .accomplished>ul, .scavenger>p, .scavenger>ul  {
+    .milk>h1, .accomplished>h1, .scavenger>h1, .milk>p, .milk>ul, .milk>a, .accomplished>p, .accomplished>ul, .accomplished>a, .scavenger>p, .scavenger>ul, .scavenger>a  {
 	   padding: 0px 200px 0px 200px;
     }
+    
+    
     .aboutarea>h1 {
 	   padding: 0px 200px 0px 200px;
     }
@@ -995,10 +1093,22 @@ fieldset {
     
     
     
+/*
     .milk>h1, .milk>p, .accomplished>h1, .accomplished>p, .scavenger>h1, .scavenger>p {
         width: 35%;
     }
+*/
     
+    .milk2 {
+        width: 100%;
+        margin: -600px 0 0 0;
+        transform:translateX(30%);
+        overflow: hidden;
+    }
+    
+    .milk2 img {
+        width: 80%;
+    }
     
     .contentone {
         min-height: 250px;
