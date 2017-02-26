@@ -34,7 +34,7 @@ h1 {
 }
 main {
 	padding: 0px 0px 50px 0px;
-    background-image: url('images/bluebear.png');
+    background-image: url('../Images/bluebear.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -438,28 +438,28 @@ svg {
 .layer-1 {
     top: 60px;
     z-index: -5;
-    background-image: url('images/mountain1.png');
+    background-image: url('../Images/mountain1.png');
 }
 .layer-2 {
     top: 50px;
     z-index: -7;
-    background-image: url('images/mountain2.png');
+    background-image: url('../Images/mountain2.png');
 }
 .layer-3 {
     height: 800px;
     top: -250px;
     z-index: -9;
-    background-image: url('images/mountain3.png');
+    background-image: url('../Images/mountain3.png');
 }
 
 /*social icons, using socicon font*/
 @font-face {
     font-family: 'si';
-    src: url('fonts/socicon.eot');
-    src: url('fonts/socicon.eot?#iefix') format('embedded-opentype'),
-         url('fonts/socicon.woff') format('woff'),
-         url('fonts/socicon.ttf') format('truetype'),
-         url('fonts/socicon.svg#icomoonregular') format('svg');
+    src: url('../Fonts/socicon.eot');
+    src: url('../Fonts/socicon.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/socicon.woff') format('woff'),
+         url('../Fonts/socicon.ttf') format('truetype'),
+         url('../Fonts/socicon.svg#icomoonregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
