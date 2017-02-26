@@ -1,3 +1,7 @@
+/*Parallax*/
+/*https://medium.com/@hamstu/recreating-the-firewatch-parallax-effect-213694d42f4e#.979zrblwv*/
+/*Initial concept borrowed from above site, but heavily edited and tweaked*/
+
 var ParallaxManager, ParallaxPart;
 
 ParallaxPart = (function() {

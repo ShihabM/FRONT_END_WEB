@@ -289,7 +289,7 @@ svg {
   z-index: 1;
 }
 
-/*Media queries for flexbox footer, placed here fro quick access*/
+/*Media queries for flexbox footer, placed here for quick access*/
 @media all and (min-width: 600px) {
   .cont, .soc0 { flex: 1 auto; }
 }
