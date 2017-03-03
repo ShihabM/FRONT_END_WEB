@@ -3,9 +3,7 @@ Front end web development
 
 Shihab Mehboob / P13233877 / CTEC3905 / Front End Web Development / Assignment 2
 
-All README content is in the About section of the site itself, allowing for all content to be visible in one place.
-
-However, just in case, the contents from the about us section (that should be here too) is as follows: 
+All README content is in the About section of the site itself, allowing for all content to be visible in one place. However, just in case, the contents from the about us section (that should be here too) is as follows: 
 
 We are a creative agency specialising in app design. We are passionate about what we do, aiming to deliver only our best. We put in our heart and soul into every product we make. The animations are fun and fluid, the graphics are vivid and eye-catching, and above all, the end product is heartwarming. We work with you to create something that we will both be proud of, and we do it whilst giving no less than 100% each and every time. We are here for you, bringing your idea to life.
 
